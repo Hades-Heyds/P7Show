@@ -1,0 +1,24 @@
+# Build & cache
+build/
+.gradle/
+app/build/
+.cxx/
+.kotlin/
+captures/
+
+# IDE
+.idea/
+*.iml
+
+# Local config
+local.properties
+
+# Backups & artifacts
+.backup/
+*.apk
+*.bak
+*.bak_*
+
+# OS
+Thumbs.db
+.DS_Store

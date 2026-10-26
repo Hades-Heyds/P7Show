@@ -1,0 +1,38 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.xpeng.p7show'
+    compileSdk 36
+
+    defaultConfig {
+        applicationId "com.xpeng.p7show"
+        minSdk 26
+        targetSdk 36
+        // 正式版本迭代：v1.17 -> v1.18（修复场景4 晨间4K 背景不生效：重新生成 morning001b_4k.hdr）
+        versionCode 102
+        versionName "2.0.3"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    androidResources {
+        noCompress += ['glb', 'ktx', 'ktx2']
+    }
+}
+
+dependencies {
+    // 全部资源本地化，无外部依赖；WebView 由系统提供
+    // 方案A：已回退 Three.js 渲染，移除 Filament 原生渲染依赖（filament-android / gltfio-android / filament-utils-android）
+}

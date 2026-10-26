@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- 车身剪影 -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M20,58 L30,46 L44,40 L64,40 L78,46 L88,58 L88,70 L20,70 Z" />
+    <!-- 车顶弧线 -->
+    <path
+        android:fillColor="#0A4FD0"
+        android:pathData="M30,46 C36,36 50,34 60,38 C70,42 76,44 78,46 Z" />
+    <!-- 车窗 -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M36,46 L48,41 L60,41 L70,45 L66,55 L40,55 Z" />
+    <!-- 前灯 -->
+    <path
+        android:fillColor="#0A4FD0"
+        android:pathData="M82,58 L88,58 L88,66 L82,66 Z" />
+    <!-- 尾灯 -->
+    <path
+        android:fillColor="#0A4FD0"
+        android:pathData="M20,60 L26,60 L26,66 L20,66 Z" />
+</vector>
